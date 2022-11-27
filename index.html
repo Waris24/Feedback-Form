@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon"
+        href="https://thumbs.dreamstime.com/b/form-form-logo-document-icon-dark-background-white-form-form-logo-document-icon-dark-background-134044973.jpg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Feedback-form</title>
+    <script src="Script.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header><span onmouseover="mouseoverevent()">Send Feedback</span></header>
+        <hr>
+        <form action="message.php" method="post" name="RegForm" onsubmit="return(waris());">
+            <div class="dbl-field">
+                <div class="field">
+                    <input type="text" placeholder="Enter Your Name" name="name">
+                </div>
+                <div class="field">
+                    <input type="text" placeholder="Enter Your E-mail" name="email">
+                </div>
+            </div>
+            <div class="dbl-field">
+                <div class="field">
+                    <input type="text" placeholder="Enter Your Phone" name="phone">
+                </div>
+                <div class="field">
+                    <input type="text" placeholder="Enter Your Linkin-ID" name="website">
+                </div>
+            </div>
+            <div class="message">
+                <textarea placeholder="Write a message" id="" cols="" rows="" name="message"></textarea>
+            </div>
+            <div class="button-area">
+                <button type="submit" on>Send Message</button>
+                <span>Sending your Message......</span>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
